@@ -1,0 +1,22 @@
+﻿<Window x:Class="EasySales.Presentation.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySales.Presentation.WPF"
+        mc:Ignorable="d"
+        Title="EasySales" Height="350" Width="525" Icon="Icon.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Name="CustomersBtn" Content="Клиенты" Margin="5,5,5,5" Width="200" Click="CustomersBtn_Click"></Button>
+        
+    </Grid>
+    
+</Window>
