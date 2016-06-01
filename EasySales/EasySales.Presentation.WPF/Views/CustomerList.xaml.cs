@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EasySales.Infrastructure.UI;
+using EasySales.Presentation.WPF.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +19,12 @@ namespace EasySales.Presentation.WPF.Views
     /// <summary>
     /// Interaction logic for CustomerList.xaml
     /// </summary>
-    public partial class CustomerList : Window
+    public partial class CustomerList : Window, IView
     {
         public CustomerList()
         {
             InitializeComponent();
+            this.DataContext = new CustomerListViewModel(this);
         }
     }
 }

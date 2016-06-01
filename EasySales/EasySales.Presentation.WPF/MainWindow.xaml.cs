@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EasySales.Infrastructure.UI;
+using EasySales.Presentation.WPF.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +29,8 @@ namespace EasySales.Presentation.WPF
 
         private void CustomersBtn_Click(object sender, RoutedEventArgs e)
         {
+            IView view = new CustomerList();
+            view.Show();
 
         }
     }
