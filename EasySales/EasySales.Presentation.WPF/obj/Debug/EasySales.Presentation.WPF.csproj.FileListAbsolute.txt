@@ -16,3 +16,7 @@ D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\obj\Debug\Views\Cust
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\obj\Debug\Views\CustomerList.baml
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.UI.dll
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.UI.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Model.exe
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Model.pdb

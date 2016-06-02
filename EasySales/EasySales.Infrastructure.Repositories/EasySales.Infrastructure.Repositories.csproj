@@ -57,7 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers\ProjectRepository.cs" />
+    <Compile Include="Customers\CustomerRepository.cs" />
+    <Compile Include="EFRepositoryFactory.cs" />
     <Compile Include="EFSqlCeRepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

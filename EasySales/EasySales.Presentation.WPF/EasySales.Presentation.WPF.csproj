@@ -114,6 +114,14 @@
       <Project>{8B634FA0-33FA-454F-8C26-A27D9AC4B3A8}</Project>
       <Name>EasySales.Infrastructure.UI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EasySales.Infrastructure\EasySales.Infrastructure.csproj">
+      <Project>{6B087F88-2458-4CF5-A8B2-EDDFF7690F80}</Project>
+      <Name>EasySales.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasySales.Model\EasySales.Model.csproj">
+      <Project>{86F76F76-4826-4763-BC82-CBFFD1E72576}</Project>
+      <Name>EasySales.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

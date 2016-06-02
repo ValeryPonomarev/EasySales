@@ -14,7 +14,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid Grid.Row="0" Grid.Column="0" Margin="5,5,5,5">
+        <DataGrid Grid.Row="0" Grid.Column="0" Margin="5,5,5,5" 
+                  SelectedItem="{Binding Path=CurrentEntity}"
+                  ItemsSource="{Binding Path=EntitiesView}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Наименование" Width="4*"/>
                 <DataGridTextColumn Header="Дата создания" Width="2*"/>

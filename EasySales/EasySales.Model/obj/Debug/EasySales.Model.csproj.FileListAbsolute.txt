@@ -1,0 +1,16 @@
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model.csprojResolveAssemblyReference.cache
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\MainWindow.g.cs
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\App.g.cs
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model_MarkupCompile.cache
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model_MarkupCompile.lref
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Debug\EasySales.Model.exe.config
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Debug\EasySales.Model.exe
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Debug\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Debug\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\MainWindow.baml
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model.g.resources
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model.Properties.Resources.resources
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model.csproj.GenerateResource.Cache
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model.exe
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\EasySales.Model.pdb

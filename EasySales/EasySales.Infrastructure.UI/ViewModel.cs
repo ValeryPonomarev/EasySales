@@ -1,31 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EasySales.Infrastructure.UI
 {
-    public abstract class ViewModel : INotifyPropertyChanged
+    public abstract class ViewModel
     {
         private IView view;
+        private DelegateCommand cancelCommand;
 
-        public ViewModel():this(null)
+        public ViewModel() 
+            : this(null)
         {
         }
 
         public ViewModel(IView view)
         {
             this.view = view;
+            this.cancelCommand = new DelegateCommand(CancelCommandHandler);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
+        public DelegateCommand CancelCommand
         {
-            if (this.PropertyChanged != null)
+            get { return cancelCommand; }
+        }
+
+        protected virtual void CancelCommandHandler(object sender, EventArgs e)
+        {
+            this.CloseView();
+        }
+
+        protected void CloseView()
+        {
+            if (view != null)
             {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                view.Close();
             }
         }
     }

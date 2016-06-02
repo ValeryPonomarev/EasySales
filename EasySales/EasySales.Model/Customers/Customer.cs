@@ -1,5 +1,4 @@
 ﻿using EasySales.Infrastructure.DomainBase;
-using EasySales.Infrastructure.EF;
 using System;
 using System.Collections.Generic;
 using System.Linq;

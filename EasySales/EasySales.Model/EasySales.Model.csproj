@@ -64,6 +64,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Customers\Customer.cs" />
+    <Compile Include="Customers\CustomerService.cs" />
+    <Compile Include="Customers\ICustomerRepository.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EasySales.Infrastructure.Repositories.Customers
 {
-    public class ProjectRepository : EFSqlCeRepositoryBase<Customer>
+    public class CustomerRepository : EFSqlCeRepositoryBase<Customer>
     {
     }
 }

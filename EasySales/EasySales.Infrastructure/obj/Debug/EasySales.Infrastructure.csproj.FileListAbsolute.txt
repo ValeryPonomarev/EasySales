@@ -1,0 +1,5 @@
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\bin\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\bin\Debug\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\obj\Debug\EasySales.Infrastructure.csprojResolveAssemblyReference.cache
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\obj\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\obj\Debug\EasySales.Infrastructure.pdb

@@ -3,3 +3,5 @@ D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.UI\bin\Debug\EasySales
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.UI\obj\Debug\EasySales.Infrastructure.UI.csprojResolveAssemblyReference.cache
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.UI\obj\Debug\EasySales.Infrastructure.UI.dll
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.UI\obj\Debug\EasySales.Infrastructure.UI.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.UI\bin\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.UI\bin\Debug\EasySales.Infrastructure.pdb
