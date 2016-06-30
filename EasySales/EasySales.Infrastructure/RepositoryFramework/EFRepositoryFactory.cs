@@ -1,4 +1,5 @@
-﻿using EasySales.Infrastructure.RepositoryFramework;
+﻿using EasySales.Infrastructure.DomainBase;
+using EasySales.Infrastructure.RepositoryFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace EasySales.Infrastructure.RepositoryFramework
     {
         private static Dictionary<string, object> repositories = new Dictionary<string, object>();
 
-        public static TRepository GetRepository<TRepository, TEntity>()
+        public static TRepository GetRepository<TRepository, TEntity>() where TRepository : class, IRepository<TEntity>
+                                                                        where TEntity : EntityBase
         {
             TRepository repository = default(TRepository);
             string interfaceShortName = typeof(TRepository).Name;
@@ -25,8 +27,7 @@ namespace EasySales.Infrastructure.RepositoryFramework
                     throw new ArgumentException("Cannot create repository. Repository does not exists in RepositoryMappings");
                 }
 
-                object[] constructorArgs = null;
-                repository = (TRepository)Activator.CreateInstance(repositoryType, constructorArgs);
+                repository = Activator.CreateInstance(repositoryType) as TRepository;
                 repositories.Add(interfaceShortName, repository);
             }
             else

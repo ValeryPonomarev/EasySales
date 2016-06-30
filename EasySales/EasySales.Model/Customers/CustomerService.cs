@@ -29,6 +29,7 @@ namespace EasySales.Model.Customers
         public static void SaveCustomer(Customer customer)
         {
             repository[customer.Key] = customer;
+            repository.Save();
         }
     }
 }

@@ -1,0 +1,17 @@
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.csprojResolveAssemblyReference.cache
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EasySales.Infrastructure.Repositories.dll.config
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EasySales.Infrastructure.Repositories.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EasySales.Infrastructure.Repositories.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EasySales.Model.exe
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\System.Data.SqlServerCe.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.xml
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.pdb

@@ -69,6 +69,11 @@ namespace EasySales.Infrastructure.UI
                 }
             }
         }
+
+        public DelegateCommand SaveCommand
+        {
+            get { return saveCommand; }
+        }
         #endregion
 
         #region AbstractMethods

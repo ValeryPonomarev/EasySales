@@ -20,3 +20,8 @@ D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Model.exe
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.pdb
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.Repositories.dll
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.Repositories.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\System.Data.SqlServerCe.dll
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EntityFramework.SqlServerCompact.xml

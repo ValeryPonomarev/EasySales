@@ -14,5 +14,6 @@ namespace EasySales.Infrastructure.RepositoryFramework
         void Add(T item);
         T this[object key] { get; set; }
         void Remove(T item);
+        void Save();
     }
 }

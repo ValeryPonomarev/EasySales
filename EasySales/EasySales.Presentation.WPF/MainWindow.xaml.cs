@@ -1,4 +1,5 @@
-﻿using EasySales.Infrastructure.UI;
+﻿using EasySales.Infrastructure.Repositories.Customers;
+using EasySales.Infrastructure.UI;
 using EasySales.Presentation.WPF.Views;
 using System;
 using System.Collections.Generic;

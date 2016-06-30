@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EasySales.Model.Customers
 {
-    interface ICustomerRepository : IRepository<Customer>
+    public interface ICustomerRepository : IRepository<Customer>
     {
     }
 }

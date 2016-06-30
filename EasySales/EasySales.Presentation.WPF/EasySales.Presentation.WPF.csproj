@@ -110,6 +110,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\EasySales.Infrastructure.Repositories\EasySales.Infrastructure.Repositories.csproj">
+      <Project>{06cf254a-96da-4b5c-b04e-d7e7041c5df3}</Project>
+      <Name>EasySales.Infrastructure.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EasySales.Infrastructure.UI\EasySales.Infrastructure.UI.csproj">
       <Project>{8B634FA0-33FA-454F-8C26-A27D9AC4B3A8}</Project>
       <Name>EasySales.Infrastructure.UI</Name>

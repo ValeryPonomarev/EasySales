@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EasySales.Presentation.WPF.ViewModels
 {
-    public class CustomerListViewModel : ListViewModel<Customer>
+    public class CustomerListViewModel : EditableListViewModel<Customer>
     {
         public CustomerListViewModel() :base(null)
         {
@@ -34,12 +34,11 @@ namespace EasySales.Presentation.WPF.ViewModels
 
         protected override void SaveCurrentEntity(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            CustomerService.SaveCustomer(this.CurrentEntity);
         }
-
+        /**/
         protected override void SetCurrentEntity(Customer entity)
         {
-            throw new NotImplementedException();
         }
     }
 }

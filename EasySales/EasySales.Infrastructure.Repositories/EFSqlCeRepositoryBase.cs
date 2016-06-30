@@ -1,9 +1,9 @@
 ﻿using EasySales.Infrastructure.DomainBase;
-using EasySales.Infrastructure.EF;
 using EasySales.Infrastructure.RepositoryFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,16 +12,20 @@ namespace EasySales.Infrastructure.Repositories
 {
     public abstract class EFSqlCeRepositoryBase<T> : DbContext, IRepository<T> where T : EntityBase
     {
-        private DbSet<T> entities;
+        static EFSqlCeRepositoryBase()
+        {
+            
+        }
 
         protected EFSqlCeRepositoryBase()
         {
+            Database.DefaultConnectionFactory = new SqlCeConnectionFactory("System.Data.SqlServerCe.4.0");
         }
 
         public DbSet<T> Entities
         {
-            get { return entities; }
-            set { entities = value; }
+            get;
+            set;
         }
 
         #region IRepository implementation
@@ -49,22 +53,27 @@ namespace EasySales.Infrastructure.Repositories
 
         public void Add(T item)
         {
-            entities.Add(item);
+            Entities.Add(item);
         }
 
         public IList<T> FindAll()
         {
-            return entities.ToList();
+            return Entities.ToList();
         }
 
         public T FindBy(object key)
         {
-            return entities.Find(key);
+            return Entities.Find(key);
         }
 
         public void Remove(T item)
         {
-            entities.Remove(item);
+            Entities.Remove(item);
+        }
+
+        public void Save()
+        {
+            this.SaveChanges();
         }
         #endregion
     }

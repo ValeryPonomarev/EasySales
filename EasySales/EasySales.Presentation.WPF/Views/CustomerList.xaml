@@ -8,19 +8,24 @@
         Title="CustomerList" Height="300" Width="300">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid Grid.Row="0" Grid.Column="0" Margin="5,5,5,5" 
+        <DataGrid Grid.Row="0" Grid.Column="0" Margin="5,5,5,5" AutoGenerateColumns="False"
                   SelectedItem="{Binding Path=CurrentEntity}"
                   ItemsSource="{Binding Path=EntitiesView}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Наименование" Width="4*"/>
-                <DataGridTextColumn Header="Дата создания" Width="2*"/>
+                <DataGridTextColumn Header="Наименование" Width="4*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Дата создания" Width="2*" Binding="{Binding DateCreate}"/>
             </DataGrid.Columns>
         </DataGrid>
+
+        <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Margin="10,0,5,5" Command="{Binding Path=NewCommand}">Добавить</Button>
+        <Button Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Margin="10,0,70,5" Command="{Binding Path=SaveCommand}">Сохранить</Button>
+
     </Grid>
 </Window>

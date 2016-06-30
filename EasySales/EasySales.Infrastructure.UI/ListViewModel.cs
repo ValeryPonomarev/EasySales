@@ -1,6 +1,7 @@
 ﻿using EasySales.Infrastructure.DomainBase;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,26 +9,27 @@ using System.Windows.Data;
 
 namespace EasySales.Infrastructure.UI
 {
-    public abstract class ListViewModel<T> : EditableViewModel<T> where T: EntityBase
+    public abstract class EditableListViewModel<T> : EditableViewModel<T> where T: EntityBase
     {
         #region Private fields
         private IView view;
         private DelegateCommand newCommand;
-        private IList<T> entitiesList;
-        private CollectionView entitiesView;
+        private List<T> entitiesList;
+        private ObservableCollection<T> entitiesView;
         #endregion
 
         #region Constructors
-        public ListViewModel():this(null)
+        public EditableListViewModel():this(null)
         {
 
         }
 
-        public ListViewModel(IView view) : base(view)
+        public EditableListViewModel(IView view) : base(view)
         {
             this.view = view;
-            newCommand = new DelegateCommand(SaveCommandHandler);
+            newCommand = new DelegateCommand(NewCommandHandler);
             entitiesList = this.GetEntitiesList();
+            entitiesView = new ObservableCollection<T>(entitiesList);
         }
         #endregion
 
@@ -37,12 +39,12 @@ namespace EasySales.Infrastructure.UI
         #endregion
 
         #region Properties
-        public IList<T> EntitiesList
+        public List<T> EntitiesList
         {
             get { return entitiesList; }
         }
 
-        public CollectionView EntitiesView
+        public ObservableCollection<T> EntitiesView
         {
             get { return entitiesView; }
         }
@@ -54,13 +56,13 @@ namespace EasySales.Infrastructure.UI
         #endregion
 
         #region Handlers
-        protected virtual void SaveCommandHandler()
+        protected virtual void NewCommandHandler(object sender, EventArgs e)
         {
             this.CurrentObjectState = ObjectState.New;
             this.entitiesList.Add(this.BuildNewEntity());
             this.CurrentEntity = null;
-            this.entitiesView.Refresh();
-            this.entitiesView.MoveCurrentToLast();
+            //this.entitiesView.Refresh();
+            //this.entitiesView.MoveCurrentToLast();
         }
         #endregion
     }
