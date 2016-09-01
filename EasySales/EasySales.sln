@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasySales.Infrastructure", "EasySales.Infrastructure\EasySales.Infrastructure.csproj", "{6B087F88-2458-4CF5-A8B2-EDDFF7690F80}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasySales.Model", "EasySales.Model\EasySales.Model.csproj", "{86F76F76-4826-4763-BC82-CBFFD1E72576}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasySales.Infrastructure.UI", "EasySales.Infrastructure.UI\EasySales.Infrastructure.UI.csproj", "{8B634FA0-33FA-454F-8C26-A27D9AC4B3A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFTest", "EFTest\EFTest.csproj", "{08792EA3-9A33-4A87-AEB5-67227E8155E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8B634FA0-33FA-454F-8C26-A27D9AC4B3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B634FA0-33FA-454F-8C26-A27D9AC4B3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B634FA0-33FA-454F-8C26-A27D9AC4B3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08792EA3-9A33-4A87-AEB5-67227E8155E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08792EA3-9A33-4A87-AEB5-67227E8155E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08792EA3-9A33-4A87-AEB5-67227E8155E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08792EA3-9A33-4A87-AEB5-67227E8155E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,26 +8,26 @@ using System.Threading.Tasks;
 
 namespace EasySales.Infrastructure.Repositories
 {
-    public abstract class EFDomainContext : DbContext
-    {
-        static EFDomainContext()
-        {
-            // ROLA - This is a hack to ensure that Entity Framework SQL Provider is copied across to the output folder.
-            // As it is installed in the GAC, Copy Local does not work. It is required for probing.
-            // Fixed "Provider not loaded" error
+    //public abstract class EFDomainContext : DbContext
+    //{
+    //    static EFDomainContext()
+    //    {
+    //        // ROLA - This is a hack to ensure that Entity Framework SQL Provider is copied across to the output folder.
+    //        // As it is installed in the GAC, Copy Local does not work. It is required for probing.
+    //        // Fixed "Provider not loaded" error
 
-            //Database.DefaultConnectionFactory = new SqlCeConnectionFactory("System.Data.SqlServerCe.4.0", "", @"Data Source = c:\EasySales.sdf");
-            //Database.DefaultConnectionFactory = new SqlCeConnectionFactory("System.Data.SqlServerCe.4.0");
-            //var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
-            var ensureDLLIsCopied2 = System.Data.Entity.SqlServerCompact.SqlCeProviderServices.Instance;
-        }
+    //        //Database.DefaultConnectionFactory = new SqlCeConnectionFactory("System.Data.SqlServerCe.4.0", "", @"Data Source = c:\EasySales.sdf");
+    //        //Database.DefaultConnectionFactory = new SqlCeConnectionFactory("System.Data.SqlServerCe.4.0");
+    //        //var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+    //        //var ensureDLLIsCopied2 = System.Data.Entity.SqlServerCompact.SqlCeProviderServices.Instance;
+    //    }
 
-        public EFDomainContext() : base()
-        {
-        }
+    //    public EFDomainContext() : base()
+    //    {
+    //    }
 
-        public EFDomainContext(string nameOrConnectionString) : base(nameOrConnectionString)
-        {
-        }
-    }
+    //    public EFDomainContext(string nameOrConnectionString) : base(nameOrConnectionString)
+    //    {
+    //    }
+    //}
 }

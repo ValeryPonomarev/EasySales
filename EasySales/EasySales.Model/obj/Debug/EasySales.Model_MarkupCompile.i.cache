@@ -1,7 +1,7 @@
 ﻿EasySales.Model
 
 
-winexe
+library
 C#
 .cs
 D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Debug\
@@ -9,10 +9,10 @@ EasySales.Model
 none
 false
 DEBUG;TRACE
-D:\MyProject\EasySales\EasySales\EasySales.Model\App.xaml
+
 11151548125
 
-12714908780
+11-1281479499
 141877482808
 MainWindow.xaml;
 

@@ -1,0 +1,14 @@
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EFTest.exe.config
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EFTest.exe
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EFTest.pdb
+D:\MyProject\EasySales\EasySales\EFTest\obj\Debug\EFTest.csprojResolveAssemblyReference.cache
+D:\MyProject\EasySales\EasySales\EFTest\obj\Debug\EFTest.exe
+D:\MyProject\EasySales\EasySales\EFTest\obj\Debug\EFTest.pdb
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EntityFramework.xml
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Infrastructure.Repositories.exe
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Model.dll
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Infrastructure.Repositories.pdb
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\Customers\CustomerRepository.cs

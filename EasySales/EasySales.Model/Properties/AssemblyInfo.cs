@@ -28,18 +28,8 @@ using System.Windows;
 //the NeutralResourceLanguage attribute below.  Update the "en-US" in
 //the line below to match the UICulture setting in the project file.
 
-//[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
-
-
-[assembly: ThemeInfo(
-    ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
-                                     //(used if a resource is not found in the page, 
-                                     // or application resource dictionaries)
-    ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
-                                              //(used if a resource is not found in the page, 
-                                              // app, or any theme specific resource dictionaries)
-)]
-
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("3252ED5D-6785-4988-818C-C0F1D068EC95")]
 
 // Version information for an assembly consists of the following four values:
 //

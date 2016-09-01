@@ -12,14 +12,8 @@ namespace EasySales.Infrastructure.Repositories
 {
     public abstract class EFSqlCeRepositoryBase<T> : DbContext, IRepository<T> where T : EntityBase
     {
-        static EFSqlCeRepositoryBase()
+        protected EFSqlCeRepositoryBase() : base("EasySales")
         {
-            
-        }
-
-        protected EFSqlCeRepositoryBase()
-        {
-            Database.DefaultConnectionFactory = new SqlCeConnectionFactory("System.Data.SqlServerCe.4.0");
         }
 
         public DbSet<T> Entities

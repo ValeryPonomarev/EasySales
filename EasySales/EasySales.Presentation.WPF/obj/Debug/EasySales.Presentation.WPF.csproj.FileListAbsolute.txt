@@ -17,11 +17,11 @@ D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\obj\Debug\Views\Cust
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.UI.dll
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.UI.pdb
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.dll
-D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Model.exe
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.pdb
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Model.pdb
-D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.Repositories.dll
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EntityFramework.xml
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Model.dll
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.Repositories.exe
 D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EasySales.Infrastructure.Repositories.pdb
-D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EntityFramework.SqlServerCompact.dll
-D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\System.Data.SqlServerCe.dll
-D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyProject\EasySales\EasySales\EasySales.Presentation.WPF\bin\Debug\EntityFramework.SqlServer.xml

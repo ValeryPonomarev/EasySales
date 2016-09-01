@@ -1,11 +1,12 @@
 ﻿using EasySales.Infrastructure.UI;
 using EasySales.Model;
-using EasySales.Model.Customers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using EasySales.Model.Customers;
 
 namespace EasySales.Presentation.WPF.ViewModels
 {
@@ -29,6 +30,7 @@ namespace EasySales.Presentation.WPF.ViewModels
 
         protected override List<Customer> GetEntitiesList()
         {
+            var customers = CustomerService.GetAllCustomers().ToList();
             return new List<Customer>(CustomerService.GetAllCustomers());
         }
 
@@ -36,7 +38,7 @@ namespace EasySales.Presentation.WPF.ViewModels
         {
             CustomerService.SaveCustomer(this.CurrentEntity);
         }
-        /**/
+
         protected override void SetCurrentEntity(Customer entity)
         {
         }
