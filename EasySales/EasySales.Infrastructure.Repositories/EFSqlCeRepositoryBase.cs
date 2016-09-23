@@ -10,11 +10,9 @@ using System.Threading.Tasks;
 
 namespace EasySales.Infrastructure.Repositories
 {
-    public abstract class EFSqlCeRepositoryBase<T> : DbContext, IRepository<T> where T : EntityBase
+    public abstract class EFSqlCeRepositoryBase<T> : EFDBContext, IRepository<T> where T : EntityBase
     {
-        protected EFSqlCeRepositoryBase() : base("EasySales")
-        {
-        }
+        protected EFSqlCeRepositoryBase() : base("name=EasySalesSqlServer") { }
 
         public DbSet<T> Entities
         {
@@ -24,7 +22,7 @@ namespace EasySales.Infrastructure.Repositories
 
         #region IRepository implementation
 
-        public T this[object key]
+        public T this[Guid key]
         {
             get
             {
@@ -55,9 +53,14 @@ namespace EasySales.Infrastructure.Repositories
             return Entities.ToList();
         }
 
-        public T FindBy(object key)
+        public T FindBy(Guid key)
         {
-            return Entities.Find(key);
+            return Entities.FirstOrDefault(_=>_.Key == key);
+        }
+
+        public T FindById(int id)
+        {
+            return Entities.FirstOrDefault(_ => _.Id == id);
         }
 
         public void Remove(T item)

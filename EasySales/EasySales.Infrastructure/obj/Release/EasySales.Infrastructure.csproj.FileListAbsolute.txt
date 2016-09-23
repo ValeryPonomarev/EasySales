@@ -1,0 +1,4 @@
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\bin\Release\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\bin\Release\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\obj\Release\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure\obj\Release\EasySales.Infrastructure.pdb

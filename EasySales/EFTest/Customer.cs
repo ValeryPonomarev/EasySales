@@ -9,7 +9,8 @@ namespace EFTest
 {
     public class Customer : EntityBase
     {
-        public int Id { get; set; }
+        public override int Id { get; set; }
+        public override Guid Key { get; set; }
         public string Name { get; set; }
         public DateTime DateBirth { get; set; }
     }

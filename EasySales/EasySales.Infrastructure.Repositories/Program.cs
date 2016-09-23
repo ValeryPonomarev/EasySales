@@ -14,10 +14,10 @@ namespace EasySales.Infrastructure.Repositories
         {
             using (var db = new CustomerRepository())
             {
-                db.Entities.Add(new Customer { Name = "Test", DateCreate = DateTime.Now });
+                db.Entities.Add(new Customer { Name = "Test" });
                 db.SaveChanges();
 
-                foreach (var customer in db.Entities)
+                foreach (var customer in db.FindAll())
                 {
                     Console.WriteLine(string.Format("Customer {0}, {1}", customer.Name, customer.DateCreate.ToShortDateString()));
                 }

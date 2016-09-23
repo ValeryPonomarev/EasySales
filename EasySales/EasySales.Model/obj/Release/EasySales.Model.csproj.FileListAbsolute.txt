@@ -1,0 +1,13 @@
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EasySales.Model.dll
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Release\EasySales.Model.csprojResolveAssemblyReference.cache
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Release\EasySales.Model.Properties.Resources.resources
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Release\EasySales.Model.csproj.GenerateResource.Cache
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Release\EasySales.Model.dll
+D:\MyProject\EasySales\EasySales\EasySales.Model\obj\Release\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EntityFramework.SqlServer.dll
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EntityFramework.dll
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EntityFramework.SqlServer.xml
+D:\MyProject\EasySales\EasySales\EasySales.Model\bin\Release\EntityFramework.xml

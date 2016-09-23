@@ -38,7 +38,11 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,8 +58,22 @@
     <Compile Include="Customers\Customer.cs" />
     <Compile Include="Customers\CustomerService.cs" />
     <Compile Include="Customers\ICustomerRepository.cs" />
+    <Compile Include="IStudentGroupRepository.cs" />
+    <Compile Include="IStudentRepository.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentGroup.cs" />
+    <Compile Include="System\Column.cs" />
+    <Compile Include="System\ColumnService.cs" />
+    <Compile Include="System\DataType.cs" />
+    <Compile Include="System\IColumnRepository.cs" />
+    <Compile Include="System\IDataTypeRepository.cs" />
+    <Compile Include="System\ITableRepository.cs" />
+    <Compile Include="System\SqlDataType.cs" />
+    <Compile Include="System\Table.cs" />
+    <Compile Include="System\TableService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -85,6 +103,7 @@
       <Name>EasySales.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -23,15 +23,18 @@ namespace EasySales.Presentation.WPF.ViewModels
         protected override Customer BuildNewEntity()
         {
             Customer customer = new Customer();
-            customer.DateCreate = DateTime.Now;
             customer.Name = "{Новый контрагент}";
             return customer;
         }
 
         protected override List<Customer> GetEntitiesList()
         {
-            var customers = CustomerService.GetAllCustomers().ToList();
             return new List<Customer>(CustomerService.GetAllCustomers());
+        }
+
+        protected override void DeleteEntity(Customer entity)
+        {
+            CustomerService.DeleteCustomer(entity);
         }
 
         protected override void SaveCurrentEntity(object sender, EventArgs e)

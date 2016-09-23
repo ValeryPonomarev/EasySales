@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +48,7 @@
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="DelegateCommandEventArgs.cs" />
     <Compile Include="EditableViewModel.cs" />
+    <Compile Include="EntityAction.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="ListViewModel.cs" />
     <Compile Include="ObjectViewModel.cs" />

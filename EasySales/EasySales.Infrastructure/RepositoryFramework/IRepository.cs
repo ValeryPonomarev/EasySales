@@ -9,10 +9,11 @@ namespace EasySales.Infrastructure.RepositoryFramework
 {
     public interface IRepository<T> where T : IEntity
     {
-        T FindBy(object key);
+        T FindBy(Guid key);
+        T FindById(int id);
         IList<T> FindAll();
         void Add(T item);
-        T this[object key] { get; set; }
+        T this[Guid key] { get; set; }
         void Remove(T item);
         void Save();
     }

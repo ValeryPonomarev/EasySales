@@ -1,0 +1,16 @@
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.UnitTests.dll.config
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.UnitTests.dll
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.UnitTests.pdb
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.Infrastructure.Repositories.exe
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.Model.dll
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EntityFramework.dll
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.Infrastructure.Repositories.pdb
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EntityFramework.xml
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\obj\Debug\EasySales.UnitTests.csprojResolveAssemblyReference.cache
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\obj\Debug\EasySales.UnitTests.dll
+D:\MyProject\EasySales\EasySales\EasySales.UnitTests\obj\Debug\EasySales.UnitTests.pdb

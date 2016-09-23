@@ -8,6 +8,8 @@ namespace EasySales.Infrastructure.DomainBase
 {
     public interface IEntity
     {
-        object Key { get; }
+        Guid Key { get; }
+        DateTime DateCreate { get; }
+        DateTime DateEdit { get; set; }
     }
 }

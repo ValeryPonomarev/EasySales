@@ -21,15 +21,21 @@ namespace EasySales.Model.Customers
             return repository.FindAll();
         }
 
-        public static Customer GetCustomer(object key)
+        public static Customer GetCustomer(Guid key)
         {
             return repository.FindBy(key);
         }
 
         public static void SaveCustomer(Customer customer)
         {
+            customer.DateEdit = DateTime.Now;
             repository[customer.Key] = customer;
             repository.Save();
+        }
+
+        public static void DeleteCustomer(Customer customer)
+        {
+            repository.Remove(customer);
         }
     }
 }

@@ -13,9 +13,10 @@ namespace EasySales.Infrastructure.UI
     {
         #region Private fields
         private IView view;
-        private DelegateCommand newCommand;
         private List<T> entitiesList;
-        private ObservableCollection<T> entitiesView;
+        private ListCollectionView entitiesView;
+        private DelegateCommand newCommand;
+        private DelegateCommand deleteCommand;
         #endregion
 
         #region Constructors
@@ -29,13 +30,15 @@ namespace EasySales.Infrastructure.UI
             this.view = view;
             newCommand = new DelegateCommand(NewCommandHandler);
             entitiesList = this.GetEntitiesList();
-            entitiesView = new ObservableCollection<T>(entitiesList);
+            entitiesView = new ListCollectionView(entitiesList);
+            deleteCommand = new DelegateCommand(DeleteCommandHandler);
         }
         #endregion
 
         #region Abstract methods
         protected abstract T BuildNewEntity();
         protected abstract List<T> GetEntitiesList();
+        protected abstract void DeleteEntity(T entity);
         #endregion
 
         #region Properties
@@ -44,7 +47,7 @@ namespace EasySales.Infrastructure.UI
             get { return entitiesList; }
         }
 
-        public ObservableCollection<T> EntitiesView
+        public ListCollectionView EntitiesView
         {
             get { return entitiesView; }
         }
@@ -52,6 +55,11 @@ namespace EasySales.Infrastructure.UI
         public DelegateCommand NewCommand
         {
             get { return newCommand; }
+        }
+
+        public DelegateCommand DeleteCommand
+        {
+            get { return deleteCommand; }
         }
         #endregion
 
@@ -61,8 +69,18 @@ namespace EasySales.Infrastructure.UI
             this.CurrentObjectState = ObjectState.New;
             this.entitiesList.Add(this.BuildNewEntity());
             this.CurrentEntity = null;
-            //this.entitiesView.Refresh();
-            //this.entitiesView.MoveCurrentToLast();
+            this.entitiesView.Refresh();
+            this.entitiesView.MoveCurrentToLast();
+        }
+
+        protected virtual void DeleteCommandHandler(object sender, EventArgs e)
+        {
+            this.CurrentObjectState = ObjectState.Deleted;
+            this.DeleteEntity(CurrentEntity);
+            this.entitiesList.Remove(CurrentEntity);
+            this.CurrentEntity = null;
+            this.entitiesView.Refresh();
+            this.entitiesView.MoveCurrentToPrevious();
         }
         #endregion
     }

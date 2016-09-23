@@ -11,4 +11,4 @@ D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Infrastructure.Repos
 D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Model.dll
 D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Infrastructure.Repositories.pdb
 D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EasySales.Model.pdb
-D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\Customers\CustomerRepository.cs
+D:\MyProject\EasySales\EasySales\EFTest\bin\Debug\EntityFramework.dll

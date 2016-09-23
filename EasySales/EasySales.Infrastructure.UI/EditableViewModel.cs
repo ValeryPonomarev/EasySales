@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Data;
 
 namespace EasySales.Infrastructure.UI
 {
@@ -21,7 +22,6 @@ namespace EasySales.Infrastructure.UI
 
         private ObjectState currentObjectState;
         private T currentEntity;
-        //private IList<BrokenRule> brokenRules;
         private DelegateCommand saveCommand;
         #endregion
 
@@ -33,9 +33,14 @@ namespace EasySales.Infrastructure.UI
         public EditableViewModel(IView view) : base(view)
         {
             currentObjectState = ObjectState.Existing;
-            saveCommand = new DelegateCommand(SaveCommandHandler);
             currentEntity = default(T);
+            saveCommand = new DelegateCommand(SaveCommandHandler);
         }
+        #endregion
+
+        #region AbstractMethods
+        protected abstract void SaveCurrentEntity(object sender, EventArgs e);
+        protected abstract void SetCurrentEntity(T entity);
         #endregion
 
         #region Properties
@@ -76,17 +81,13 @@ namespace EasySales.Infrastructure.UI
         }
         #endregion
 
-        #region AbstractMethods
-        protected abstract void SaveCurrentEntity(object sender, EventArgs e);
-        protected abstract void SetCurrentEntity(T entity);
-        #endregion
-
         #region Handlers
         protected virtual void SaveCommandHandler(object sender, EventArgs e)
         {
             this.SaveCurrentEntity(sender, e);
             this.currentObjectState = ObjectState.Existing;
         }
+
         #endregion
 
         public event PropertyChangedEventHandler PropertyChanged;

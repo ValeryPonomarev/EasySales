@@ -4,24 +4,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EasySales.Model.Customers
 {
-    public class Customer: EntityBase
+    public class Customer: EntityBase, IEntity
     {
+        private int id;
+        private string name;
+
         public Customer():this(null)
         {
         }
 
-        public Customer(object key)
+        public Customer(Guid? key)
             :base(key)
         {
-            this.DateCreate = DateTime.Now;
         }
 
-        
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime DateCreate { get; set; }
+        [Key]
+        public override int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
     }
 }

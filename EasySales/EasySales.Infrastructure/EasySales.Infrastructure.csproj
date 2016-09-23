@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataHelper.cs" />
     <Compile Include="DomainBase\EntityBase.cs" />
     <Compile Include="DomainBase\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

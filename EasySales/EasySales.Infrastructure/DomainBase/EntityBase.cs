@@ -8,27 +8,28 @@ namespace EasySales.Infrastructure.DomainBase
 {
     public abstract class EntityBase : IEntity
     {
-        private object key;
-
         protected EntityBase() : this(null)
         {
         }
 
-        protected EntityBase(object key)
+        protected EntityBase(Guid? key)
         {
-            if (key == null)
-            {
-                key = NewKey();
+            if (!key.HasValue) {
+                Key = NewKey();
             }
-            this.key = key;
+            else {
+                this.Key = key.Value;
+            }
+            this.DateCreate = DateTime.Now;
+            this.DateEdit = DateTime.Now;
         }
 
-        public object Key
-        {
-            get { return key; }
-        }
-
-        protected virtual object NewKey()
+        public virtual int Id { get; set; }
+        public virtual Guid Key { get; set; }
+        public virtual DateTime DateEdit { get; set; }
+        public virtual DateTime DateCreate { get; private set; }
+        
+        protected virtual Guid NewKey()
         {
             return Guid.NewGuid();
         }
@@ -53,7 +54,7 @@ namespace EasySales.Infrastructure.DomainBase
                 return false;
             }
 
-            if (!base1.Key.Equals(base2.key))
+            if (!base1.Key.Equals(base2.Key))
             {
                 return false;
             }
@@ -67,9 +68,9 @@ namespace EasySales.Infrastructure.DomainBase
 
         public override int GetHashCode()
         {
-            if (this.key != null)
+            if (this.Key != null)
             {
-                return this.key.GetHashCode();
+                return this.Key.GetHashCode();
             }
             else
             {

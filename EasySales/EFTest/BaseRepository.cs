@@ -11,7 +11,8 @@ namespace EFTest
 {
     public abstract class BaseRepository<T> : DbContext, IRepository<T> where T : EntityBase
     {
-        protected BaseRepository() : base("EasySales")
+        protected BaseRepository()
+            : base("SqlServer")
         {
         }
 
@@ -47,6 +48,22 @@ namespace EFTest
         public void Add(T item)
         {
             Entities.Add(item);
+        }
+
+        T IRepository<T>.this[Guid key]
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public T FindBy(Guid key)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T FindById(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public IList<T> FindAll()
