@@ -28,5 +28,9 @@ namespace EasySales.Configurator.Nodes
             yield return new TablesNode(Context, this);
         }
 
+        protected override IEnumerable<IPropertyItem> GetProperties()
+        {
+            yield return new PropertyItem<String>("Name", "Value");
+        }
     }
 }

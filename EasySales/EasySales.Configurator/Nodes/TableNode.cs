@@ -35,6 +35,11 @@ namespace EasySales.Configurator.Nodes
             yield return new ColumnsNode(Context, this, (Table)Entity);
         }
 
+        protected override IEnumerable<IPropertyItem> GetProperties()
+        {
+            return Enumerable.Empty<IPropertyItem>();
+        }
+
         private void RemoveTable(object sender, DelegateCommandEventArgs args)
         {
             TableService.RemoveTable((Table)Entity);

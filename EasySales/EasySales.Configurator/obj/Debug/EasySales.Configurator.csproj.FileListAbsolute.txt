@@ -25,3 +25,4 @@ D:\MyProject\EasySales\EasySales\EasySales.Configurator\bin\Debug\EntityFramewor
 D:\MyProject\EasySales\EasySales\EasySales.Configurator\bin\Debug\EntityFramework.SqlServer.xml
 D:\MyProject\EasySales\EasySales\EasySales.Configurator\bin\Debug\EasySales.Infrastructure.UI.dll
 D:\MyProject\EasySales\EasySales\EasySales.Configurator\bin\Debug\EasySales.Infrastructure.UI.pdb
+D:\MyProject\EasySales\EasySales\EasySales.Configurator\obj\Debug\Resources.baml

@@ -9,7 +9,7 @@ namespace EasySales.Configurator
     public class PropertyItem<T> : IPropertyItem
     {
         private string name;
-        private T value;
+        private object value;
 
         public PropertyItem(string name, T value) {
             this.name = name;
@@ -24,7 +24,7 @@ namespace EasySales.Configurator
             }
         }
 
-        public T Value
+        public object Value
         {
             get
             {

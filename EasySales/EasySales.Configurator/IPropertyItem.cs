@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace EasySales.Configurator
 {
-    public class IPropertyItem
+    public interface IPropertyItem
     {
         string Name { get; }
+        object Value { get; set; }
     }
 }

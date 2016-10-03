@@ -33,6 +33,11 @@ namespace EasySales.Configurator.Nodes
             return Enumerable.Empty<NodeBase>();
         }
 
+        protected override IEnumerable<IPropertyItem> GetProperties()
+        {
+            return Enumerable.Empty<IPropertyItem>();
+        }
+
         private void RemoveColumn(object sender, DelegateCommandEventArgs args)
         {
             ColumnService.RemoveColumn((Column)Entity);

@@ -61,6 +61,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ConfiguratorViewModel.cs" />
+    <Compile Include="DataGridCellTemplateSelector.cs" />
     <Compile Include="IPropertyItem.cs" />
     <Compile Include="Nodes\ColumnNode.cs" />
     <Compile Include="Nodes\ColumnsNode.cs" />
@@ -84,6 +85,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Resources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

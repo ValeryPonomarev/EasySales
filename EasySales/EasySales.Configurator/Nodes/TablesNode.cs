@@ -23,6 +23,11 @@ namespace EasySales.Configurator.Nodes
             }
         }
 
+        protected override IEnumerable<IPropertyItem> GetProperties()
+        {
+            return Enumerable.Empty<IPropertyItem>();
+        }
+
         public override string Name
         {
             get

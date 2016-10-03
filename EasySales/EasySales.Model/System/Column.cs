@@ -59,7 +59,7 @@ namespace EasySales.Model.System
             }
         }
 
-        public Table Table
+        public virtual Table Table
         {
             get
             {
@@ -72,7 +72,7 @@ namespace EasySales.Model.System
             }
         }
 
-        public DataType DataType
+        public virtual DataType DataType
         {
             get
             {

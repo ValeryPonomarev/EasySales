@@ -33,9 +33,16 @@ namespace EasySales.Configurator.Nodes
             }
         }
 
+        protected override IEnumerable<IPropertyItem> GetProperties()
+        {
+            PropertyItem<string> name = new PropertyItem<string>("Наименование", "Колонка");
+            yield return name;
+        }
+
         private void AddColumn(object sender, DelegateCommandEventArgs args) {
             Column column = new Column();
             column.Name = "NewColumn";
+            column.Table = (Table)Entity;
             ColumnService.SaveColumn(column);
             ColumnNode node = new ColumnNode(Context, this, column);
             this.ChildNodes.Add(node);

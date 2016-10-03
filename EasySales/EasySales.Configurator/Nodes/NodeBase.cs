@@ -66,6 +66,10 @@ namespace EasySales.Configurator.Nodes
             }
         }
 
+        public virtual IEnumerable<PropertyItem<string>> Properties {
+            get { yield return new PropertyItem<string>("name", "values"); }
+        }
+
         protected ConfiguratorViewModel Context { get { return context; } }
 
         protected NodeBase ParentNode {

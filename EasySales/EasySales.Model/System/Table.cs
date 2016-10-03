@@ -27,6 +27,6 @@ namespace EasySales.Model.System
             }
         }
 
-        public List<Column> Columns { get; set; }
+        public virtual ICollection<Column> Columns { get; set; }
     }
 }

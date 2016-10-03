@@ -7,6 +7,20 @@
         xmlns:nodes="clr-namespace:EasySales.Configurator.Nodes"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!--<Window.Resources>
+        <local:DataGridCellTemplateSelector x:Key="dataGridCellTemplateSelector">
+            <local:DataGridCellTemplateSelector.StringTemplate>
+                <DataTemplate>
+                    <TextBox Text="{Binding Value}"></TextBox>
+                </DataTemplate>
+            </local:DataGridCellTemplateSelector.StringTemplate>
+            <local:DataGridCellTemplateSelector.IntTemplate>
+                <DataTemplate>
+                    <TextBox Text="{Binding Value}"></TextBox>
+                </DataTemplate>
+            </local:DataGridCellTemplateSelector.IntTemplate>
+        </local:DataGridCellTemplateSelector>
+    </Window.Resources>-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -40,7 +54,11 @@
                 </ContextMenu>
             </TreeView.Resources>
         </TreeView>
-        <DataGrid Grid.Row="2" Grid.Column="0" ItemsSource="{Binding Properties}" AutoGenerateColumns="True">
+        <DataGrid Grid.Row="2" Grid.Column="0" ItemsSource="{Binding Path=Properties}" AutoGenerateColumns="True">
+            <!--<DataGrid.Columns>-->
+                <!--<DataGridTextColumn Header="Свойство" Binding="{Binding Name}" Width="*"/>-->
+                <!--<DataGridTemplateColumn Header="Значение" CellEditingTemplate="{StaticResource ResourceKey=dataGridCellTemplateSelector}"/>-->
+            <!--</DataGrid.Columns>-->
         </DataGrid>
         <StackPanel Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" >
             <Label Content="Data editor"></Label>

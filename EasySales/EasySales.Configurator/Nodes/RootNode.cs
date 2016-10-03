@@ -23,10 +23,14 @@ namespace EasySales.Configurator.Nodes
             }
         }
 
-
         protected override IEnumerable<NodeBase> GetChildNodes()
         {
             yield return new ConfigurationNode(Context, this);
+        }
+
+        protected override IEnumerable<IPropertyItem> GetProperties()
+        {
+            return Enumerable.Empty<IPropertyItem>();
         }
     }
 }
