@@ -46,9 +46,10 @@ namespace EasySales.Infrastructure.RepositoryFramework
         static EFRepositoryMapping()
         {
             types = new Dictionary<string, string>();
+            types.Add("ICustomerRepository", "EasySales.Infrastructure.Repositories.Customers.CustomerRepository, EasySales.Infrastructure.Repositories, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null");
             types.Add("ITableRepository", "EasySales.Infrastructure.Repositories.System.TableRepository, EasySales.Infrastructure.Repositories, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null");
             types.Add("IColumnRepository", "EasySales.Infrastructure.Repositories.System.ColumnRepository, EasySales.Infrastructure.Repositories, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null");
-            types.Add("ICustomerRepository", "EasySales.Infrastructure.Repositories.Customers.CustomerRepository, EasySales.Infrastructure.Repositories, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null");
+            types.Add("IStudentRepository", "EasySales.Infrastructure.Repositories.Customers.StudentRepository, EasySales.Infrastructure.Repositories, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null");
         }
 
         public static Type GetRepositoryType(string interfaceShortTypeName)

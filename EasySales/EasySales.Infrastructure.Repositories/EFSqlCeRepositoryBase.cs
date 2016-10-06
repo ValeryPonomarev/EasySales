@@ -70,7 +70,7 @@ namespace EasySales.Infrastructure.Repositories
 
         public void Save()
         {
-            this.SaveChanges();
+            -+this.SaveChanges();
         }
         #endregion
     }

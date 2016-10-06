@@ -45,3 +45,15 @@ D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\ru\System.Web.WebPages.Razor.
 D:\MyProject\EasySales\EasySales\EasySales.WEB\obj\Debug\EasySales.WEB.csprojResolveAssemblyReference.cache
 D:\MyProject\EasySales\EasySales\EasySales.WEB\obj\Debug\EasySales.WEB.dll
 D:\MyProject\EasySales\EasySales\EasySales.WEB\obj\Debug\EasySales.WEB.pdb
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Model.dll
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Infrastructure.dll
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Model.pdb
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Infrastructure.pdb
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Infrastructure.Repositories.exe
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Infrastructure.UI.dll
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EntityFramework.dll
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Infrastructure.Repositories.pdb
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EasySales.Infrastructure.UI.pdb
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EntityFramework.xml
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EntityFramework.SqlServer.dll
+D:\MyProject\EasySales\EasySales\EasySales.WEB\bin\EntityFramework.SqlServer.xml

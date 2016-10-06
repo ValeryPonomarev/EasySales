@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Text;
+using EasySales.Model.System;
 
 namespace EasySales.WEB.Controllers
 {
@@ -15,9 +17,28 @@ namespace EasySales.WEB.Controllers
         }
 
         // GET: /HelloWorld/Welcome/ 
-        public string Welcome(string name, int ID = 1)
+        public ActionResult Welcome(string name, int numTimes = 1)
         {
-            return HttpUtility.HtmlEncode(string.Format("Hello {0}, NumTimes is: {1}.", name, ID));
+            ViewBag.Message = "Hello " + name;
+            ViewBag.NumTimes = numTimes;
+
+            return View();
+        }
+
+        // GET: /HelloWorld/GetTables/ 
+        public string GetTables()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            builder.Append("<ul>");
+            foreach (var table in TableService.GetAll())
+            {
+                builder.Append(string.Format("<li>{0}</li>" , table.Name));
+            }
+            builder.Append("<ul>");
+
+
+            return builder.ToString();
         }
     }
 }
