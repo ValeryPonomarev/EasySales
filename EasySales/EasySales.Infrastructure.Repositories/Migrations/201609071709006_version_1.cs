@@ -9,7 +9,7 @@ namespace EasySales.Infrastructure.Repositories.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Customers",
+                "dbo.Entities",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -24,7 +24,7 @@ namespace EasySales.Infrastructure.Repositories.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.Customers");
+            DropTable("dbo.Entities");
         }
     }
 }

@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using EasySales.Model.Customers;
+using EasySales.Model.Entities;
+using EasySales.Model.EntityServices;
 
 namespace EasySales.Presentation.WPF.ViewModels
 {

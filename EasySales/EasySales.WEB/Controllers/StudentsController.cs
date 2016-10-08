@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.Mvc;
 using EasySales.Infrastructure.Repositories.Customers;
 using EasySales.Model;
+using EasySales.Model.EntityServices;
+using EasySales.Model.Entities;
 
 namespace EasySales.WEB.Controllers
 {
@@ -16,7 +18,6 @@ namespace EasySales.WEB.Controllers
         // GET: Students
         public ActionResult Index()
         {
-            //var entities = StudentService.Entities.Include(s => s.StudentGroup);
             return View(StudentService.GetAll());
         }
 
@@ -51,8 +52,6 @@ namespace EasySales.WEB.Controllers
         {
             if (ModelState.IsValid)
             {
-                //StudentService. db.Entities.Add(student);
-                //db.SaveChanges();
                 StudentService.Save(student);
                 return RedirectToAction("Index");
             }
@@ -114,21 +113,9 @@ namespace EasySales.WEB.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            //Student student = db.Entities.Find(id);
-            //db.Entities.Remove(student);
-            //db.SaveChanges();
             Student student = StudentService.Get(id);
             StudentService.Delete(student);
             return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                //db.Dispose();
-            }
-            base.Dispose(disposing);
         }
     }
 }

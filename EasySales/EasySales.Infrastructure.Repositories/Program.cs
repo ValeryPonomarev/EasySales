@@ -1,5 +1,5 @@
 ﻿using EasySales.Infrastructure.Repositories.Customers;
-using EasySales.Model.Customers;
+using EasySales.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

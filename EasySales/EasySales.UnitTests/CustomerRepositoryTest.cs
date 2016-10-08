@@ -2,8 +2,9 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using EasySales.Model.Customers;
+using EasySales.Model.Entities;
 using EasySales.Infrastructure.RepositoryFramework;
+using EasySales.Model.Repositories;
 
 namespace EasySales.UnitTests
 {

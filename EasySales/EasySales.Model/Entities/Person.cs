@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasySales.Model
+namespace EasySales.Model.Entities
 {
     public class Person : EntityBase, IEntity
     {

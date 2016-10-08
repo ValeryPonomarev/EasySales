@@ -1,7 +1,8 @@
 ﻿using System;
-using EasySales.Model.Customers;
+using EasySales.Model.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EasySales.Infrastructure.RepositoryFramework;
+using EasySales.Model.Repositories;
 
 namespace EasySales.UnitTests
 {

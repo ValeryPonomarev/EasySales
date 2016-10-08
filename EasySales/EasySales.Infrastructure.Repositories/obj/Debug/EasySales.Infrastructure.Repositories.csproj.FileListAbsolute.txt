@@ -10,7 +10,7 @@ D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.xml
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\bin\Debug\EntityFramework.SqlServer.xml
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.csprojResolveAssemblyReference.cache
-D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.exe
-D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.pdb
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.Migrations.version_1.resources
 D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.csproj.GenerateResource.Cache
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.exe
+D:\MyProject\EasySales\EasySales\EasySales.Infrastructure.Repositories\obj\Debug\EasySales.Infrastructure.Repositories.pdb

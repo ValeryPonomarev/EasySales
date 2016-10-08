@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasySales.Model
+namespace EasySales.Model.Entities
 {
     public partial class Student : Person
     {
-        private int studentGroupID;
+        private int? studentGroupID;
         private StudentGroup studentGroup;
 
         public Student() : this(null) { }
@@ -21,7 +21,7 @@ namespace EasySales.Model
             this.SurName = surName;
         }
 
-        public int StudentGroupID
+        public int? StudentGroupID
         {
             get
             {

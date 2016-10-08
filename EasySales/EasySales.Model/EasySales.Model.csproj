@@ -44,6 +44,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,14 +56,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers\Customer.cs" />
-    <Compile Include="Customers\CustomerService.cs" />
-    <Compile Include="Customers\ICustomerRepository.cs" />
-    <Compile Include="IStudentGroupRepository.cs" />
-    <Compile Include="IStudentRepository.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="StudentGroup.cs" />
-    <Compile Include="StudentService.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="EntityServices\CustomerService.cs" />
+    <Compile Include="EntityServices\StudentGroupService.cs" />
+    <Compile Include="Repositories\ICustomerRepository.cs" />
+    <Compile Include="Repositories\IStudentGroupRepository.cs" />
+    <Compile Include="Repositories\IStudentRepository.cs" />
+    <Compile Include="Entities\Student.cs" />
+    <Compile Include="Entities\StudentGroup.cs" />
+    <Compile Include="EntityServices\StudentService.cs" />
     <Compile Include="System\Column.cs" />
     <Compile Include="System\ColumnService.cs" />
     <Compile Include="System\DataType.cs" />
@@ -74,7 +76,7 @@
     <Compile Include="System\TableService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
+    <Compile Include="Entities\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

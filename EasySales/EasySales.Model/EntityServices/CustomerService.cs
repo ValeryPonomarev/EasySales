@@ -1,11 +1,13 @@
 ﻿using EasySales.Infrastructure.RepositoryFramework;
+using EasySales.Model.Entities;
+using EasySales.Model.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasySales.Model.Customers
+namespace EasySales.Model.EntityServices
 {
     public static class CustomerService
     {

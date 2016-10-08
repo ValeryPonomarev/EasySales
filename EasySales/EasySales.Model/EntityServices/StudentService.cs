@@ -1,11 +1,14 @@
 ﻿using EasySales.Infrastructure.RepositoryFramework;
+using EasySales.Model.Entities;
+using EasySales.Model.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasySales.Model
+namespace EasySales.Model.EntityServices
 {
     public static class StudentService
     {
@@ -42,5 +45,6 @@ namespace EasySales.Model
         {
             repository.Remove(student);
         }
+        
     }
 }
